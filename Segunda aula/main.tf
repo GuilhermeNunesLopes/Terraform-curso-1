@@ -14,7 +14,7 @@ provider "aws" {
     region = var.region
 }
 
-resource "aws_instance" "linux_do_julermi" {
+resource "aws_instance" "linux" {
   ami           = var.instance_ami
   instance_type = var.instance_type
 
