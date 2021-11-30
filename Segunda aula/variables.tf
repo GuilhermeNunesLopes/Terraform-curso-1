@@ -1,28 +1,33 @@
-variable "region" {
-  type = string
+variable "ambiente" {
+  type        = string
   description = ""
-  default = "us-east-1"
+}
+
+variable "region" {
+  type        = string
+  description = ""
+
 }
 
 variable "instance_ami" {
-  type = string
+  type        = string
   description = ""
-  default = "ami-000245c336b590ae0"
+
 }
 
 variable "instance_type" {
-  type = string
+  type        = string
   description = ""
-  default = "t2.micro"
+
 }
 
 variable "instance_tag" {
-  type = map(string)
+  type        = map(string)
   description = ""
   default = {
 
-    Name = "Instancia do Ju"
-    Type = "Linux"
+    Name    = "Instancia do Ju"
+    Type    = "Linux"
     Country = "BR"
   }
 }
