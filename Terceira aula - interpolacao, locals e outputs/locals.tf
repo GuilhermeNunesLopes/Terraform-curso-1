@@ -7,4 +7,5 @@ locals {
 
   file_path = "ops.txt"
 
+  file_path-random = "${random_string.bucket.id}.json"
 }
