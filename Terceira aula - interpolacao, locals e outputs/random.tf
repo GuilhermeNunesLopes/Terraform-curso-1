@@ -3,7 +3,7 @@
 resource "random_string" "bucket" {
   length  = 50
   special = false
-  lower = true 
-  upper = false
+  lower   = true
+  upper   = false
 
 }
